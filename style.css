@@ -1190,4 +1190,28 @@ h1, h2, h3, h4 {
     }
 }
 
+@media (max-width: 768px) {
+
+  .nav-container {
+    position: relative;
+  }
+
+  .hamburger {
+    display: flex;
+    position: relative;
+    z-index: 1002;
+  }
+
+  /* Icons BELOW hamburger but HORIZONTAL */
+  .nav-icons {
+    position: absolute;
+    top: 60px; /* below hamburger */
+    right: 16px;
+    display: flex;
+    flex-direction: row; /* 🔥 horizontal */
+    align-items: center;
+    gap: 12px;
+    z-index: 1001;
+  }
+}
 
