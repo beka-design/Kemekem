@@ -1154,3 +1154,39 @@ h1, h2, h3, h4 {
 .style-card:hover .style-image::after {
     transform: translateY(0);
 }
+.nav-icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    position: relative;
+    z-index: 10;
+}
+
+.nav-icons select,
+.nav-icons .icon-link {
+    font-size: 16px;
+    padding: 6px;
+    border-radius: 4px;
+    background-color: white;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+/* Ensure icons are visible on small screens */
+@media (max-width: 768px) {
+    .nav-icons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .nav-icons select,
+    .nav-icons .icon-link {
+        font-size: 14px;
+        padding: 5px;
+    }
+}
