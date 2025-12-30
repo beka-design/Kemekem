@@ -997,7 +997,9 @@ h1, h2, h3, h4 {
     }
     
     .nav-icons {
-        display: none;
+        margin-top: 10px; 
+        justify-content: center; 
+        flex-wrap: wrap;
     }
     
     .hero-title {
