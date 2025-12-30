@@ -1156,30 +1156,18 @@ h1, h2, h3, h4 {
 }
 
 
-/* MOBILE ONLY */
 @media (max-width: 768px) {
-
-    /* Make sure hamburger stays on top */
     .hamburger {
         display: block !important;
         position: relative;
-        margin-top: 10px;
         z-index: 100;
+        margin-top: 10px;
     }
 
-    /* Force nav-icons to appear BELOW the hamburger */
     .nav-icons {
-        display: flex !important;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-
-        width: 100%;
         margin-top: 10px;
-
         position: relative;
         z-index: 90;
     }
 }
+
