@@ -1156,28 +1156,29 @@ h1, h2, h3, h4 {
 }
 
 
-/* Show and style icon row only on mobile */
+/* MOBILE ONLY */
 @media (max-width: 768px) {
+
+    /* Make sure hamburger stays on top */
+    .hamburger {
+        display: block;
+        margin-bottom: 10px;
+        z-index: 20;
+    }
+
+    /* Force nav-icons to appear BELOW the hamburger */
     .nav-icons {
-        display: flex;
+        display: flex !important;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         gap: 10px;
-        margin-top: 10px;
-        padding: 10px;
-        background-color: #fff;
-        z-index: 10;
-    }
 
-    .nav-icons select,
-    .nav-icons .icon-link {
-        font-size: 14px;
-        padding: 6px;
-        border-radius: 4px;
-        background-color: #f9f9f9;
-        border: 1px solid #ccc;
-        color: #333;
+        width: 100%;
+        margin-top: 10px;
+
+        position: relative;
+        z-index: 10;
     }
 }
